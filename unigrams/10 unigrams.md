@@ -64,10 +64,10 @@ Note that the scores you get might not align with the example given above, as yo
 * You are allowed to use a loop to go over the different categories.
 * You will face a problem in using the `my_map` and `my_filter` functions, where you need to pass it both a dictionary and an element, while both `my_map` and `my_filter` only accept one variable. There is a couple of ways that you can deal with this. One way is the use of lambda functions. Let's say that we have a list containing numeric data and a list containing numbers to multiply that data by:
 
-    data_list = [1, 2, 3, 4]
-    multiply_list = [12, 23, 34]
+        data_list = [1, 2, 3, 4]
+        multiply_list = [12, 23, 34]
 
-    for multiplier in multiply_list:
-        results_lambda_function = my_map(lambda x: x * multiplier, data_list)
+        for multiplier in multiply_list:
+            results_lambda_function = my_map(lambda x: x * multiplier, data_list)
 
-  Essentially, we create some function that only exists in local scope wherein our second variable is set. This way, every loop, we create a "new" function that only has one input variable, but that will always use our second variable as a multiplier. In your case, this set variable will be a dictionary concerning a specific category, while the other (free) variable is a tokenized word.
+    Essentially, we create some function that only exists in local scope wherein our second variable is set. This way, every loop, we create a "new" function that only has one input variable, but that will always use our second variable as a multiplier. In your case, this set variable will be a dictionary concerning a specific category, while the other (free) variable is a tokenized word.
